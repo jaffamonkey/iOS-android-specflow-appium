@@ -70,7 +70,7 @@ namespace IosAndroidSpecflowExample.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to http://127.0.0.1:4723/wd/hub/.
         /// </summary>
         public static string ServerUri {
             get {

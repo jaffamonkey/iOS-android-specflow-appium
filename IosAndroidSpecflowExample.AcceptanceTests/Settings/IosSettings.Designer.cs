@@ -61,7 +61,7 @@ namespace IosAndroidSpecflowExample.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /Users/lavinia.faragau/Desktop/AcquaintNativeiOS-shortlist.app.
+        ///   Looks up a localized string similar to /Users/jaffa/code/iOS-android-specflow-example/apps/AcquaintNativeiOS-shortlist.app.
         /// </summary>
         public static string AppPath {
             get {
@@ -79,7 +79,7 @@ namespace IosAndroidSpecflowExample.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 12.0.
+        ///   Looks up a localized string similar to 12.2.
         /// </summary>
         public static string DevicePlatform {
             get {
