@@ -1,13 +1,12 @@
 ﻿using FluentAssertions;
 using IosAndroidSpecflowExample.Helpers;
 using IosAndroidSpecflowExample.Pages;
-using SpecNuts;
 using TechTalk.SpecFlow;
 
 namespace IosAndroidSpecflowExample.Steps
 {
     [Binding]
-    public class AcquaintanceSteps : ReportingStepDefinitions
+    public class AcquaintanceSteps
     {
         public AcquaintanceSteps(ScenarioState scenarioState)
         {
@@ -43,7 +42,8 @@ namespace IosAndroidSpecflowExample.Steps
             string formattedAcquaintanceName = $"{ScenarioState.LastName}, {ScenarioState.FirstName}";
 
             acquaintancePage.WaitUntilListIsNotEmpty();
-            acquaintancePage.TapOnAcquaintance(formattedAcquaintanceName);
+        //    acquaintancePage.TapOnAcquaintance(formattedAcquaintanceName);
+            acquaintancePage.TapOnAcquaintance("boo");
         }
 
         [StepDefinition(@"I should see that the acquaintance was deleted")]

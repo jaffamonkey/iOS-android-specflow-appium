@@ -1,6 +1,5 @@
 ### UI test automation project example for iOS and Android using Specflow and Appium frameworks.
 
-
 #### It includes the setup for running tests nighlty using Azure Pipelines.
 
 iOS Acceptance Tests
@@ -26,7 +25,7 @@ Android Acceptance Tests
 
 ### Cake
 * [Cake](https://cakebuild.net/)
-* [build.cake](https://github.com/FortechRomania/iOS-android-specflow-example/blob/master/build.cake)
+* [build.cake](https://github.com/jaffamonkey/iOS-android-specflow-example/blob/master/build.cake)
 * [Cake - Visual Studio Code](https://cakebuild.net/docs/editors/vscode)
 
 ### Azure Pipelines

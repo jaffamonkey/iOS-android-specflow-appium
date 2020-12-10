@@ -1,12 +1,11 @@
 ﻿using IosAndroidSpecflowExample.Helpers;
 using IosAndroidSpecflowExample.Pages;
-using SpecNuts;
 using TechTalk.SpecFlow;
 
 namespace IosAndroidSpecflowExample.Steps
 {
     [Binding]
-    public class AddAcquaintanceSteps : ReportingStepDefinitions
+    public class AddAcquaintanceSteps
     {
         public AddAcquaintanceSteps(ScenarioState scenarioState)
         {

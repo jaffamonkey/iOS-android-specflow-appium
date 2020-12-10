@@ -1,49 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using IosAndroidSpecflowExample.Helpers;
-using IosAndroidSpecflowExample.Reporting;
 using NUnit.Framework;
-using SpecNuts;
-using SpecNuts.Json;
 using TechTalk.SpecFlow;
 
 namespace IosAndroidSpecflowExample.Steps
 {
     [Binding]
-    public class Hooks : ReportingStepDefinitions
+    public class Hooks
     {
         public Hooks(ScenarioContext currentScenarioContext)
         {
             CurrentScenarioContext = currentScenarioContext;
         }
 
-        private static List<ScenarioScreenshotInfo> ScenarioScreenshots { get; set; } = new List<ScenarioScreenshotInfo>();
-
         private ScenarioContext CurrentScenarioContext { get; set; }
 
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
-            Reporters.Add(new JsonReporter());
-
-            Reporters.FinishedReport += (sender, args) =>
-            {
-                var reportsPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-
-                try
-                {
-                    ScreenshotEmbedder.EmbedScreenshotsForFailedScenarios(args.Reporter.Report.Features, ScenarioScreenshots);
-                }
-                catch (Exception exception)
-                {
-                    Console.WriteLine(exception);
-                }
-
-                args.Reporter.WriteToFile($"{reportsPath}/TestReports.json");
-            };
-
             AppiumManager.Platform = Settings.GlobalSettings.Platform == "iOS" ? PlatformEnum.IOS : PlatformEnum.Android;
             AppiumServer.OutputDataReceived += OnOutputDataReceived;
             AppiumServer.StartServerIfShouldRunLocally();
@@ -73,8 +48,6 @@ namespace IosAndroidSpecflowExample.Steps
                 try
                 {
                     var screenshot = AppiumManager.Driver.GetScreenshot();
-                    ScenarioScreenshots.Add(new ScenarioScreenshotInfo(CurrentScenarioContext.ScenarioInfo.Title, screenshot.AsBase64EncodedString));
-
                     string screenshotPath = Path.Combine(TestContext.CurrentContext.WorkDirectory, $"{TestContext.CurrentContext.Test.Name}.png");
                     File.WriteAllBytes(screenshotPath, screenshot.AsByteArray);
 
