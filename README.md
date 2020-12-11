@@ -5,7 +5,7 @@ First start Appium and start an emulator (assumed device identifier is `Pixel_XL
 Check the `Settings` directory for more configuration options.
 
 ### Run from Visual Studio
-After building solution, open Test Explorer and run speclfow test from there.
+After building solution, open Test Explorer and run Specflow tests from there.
 
 ### Run from command-line
 First, navigate to the project DLL location 
