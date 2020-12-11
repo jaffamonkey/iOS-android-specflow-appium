@@ -1,5 +1,7 @@
 ﻿# To run tests locally:
 
+*TODO: Browserstack integration*
+
 First start Appium and start an emulator (assumed device identifier is `Pixel_XL_API_28`).
 
 Check the `Settings` directory for more configuration options.
