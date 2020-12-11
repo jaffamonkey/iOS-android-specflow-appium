@@ -42,8 +42,7 @@ namespace IosAndroidSpecflowExample.Steps
             string formattedAcquaintanceName = $"{ScenarioState.LastName}, {ScenarioState.FirstName}";
 
             acquaintancePage.WaitUntilListIsNotEmpty();
-        //    acquaintancePage.TapOnAcquaintance(formattedAcquaintanceName);
-            acquaintancePage.TapOnAcquaintance("boo");
+            acquaintancePage.TapOnAcquaintance(formattedAcquaintanceName);
         }
 
         [StepDefinition(@"I should see that the acquaintance was deleted")]
