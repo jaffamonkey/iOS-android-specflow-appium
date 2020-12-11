@@ -22,7 +22,4 @@ dotnet test IosAndroidSpecflowExample.dll
 
 ### Reports
 
-Not priority for this POC, as primary focus in on testing framework and tools in context of Browserstack
-
-I have not included local reports for POC, as browserstack will generate those (they are extensive).
-When running tests locally, and there is an error a screenshot is created and located in default project build directory.
+No report output, as relying on browserstack.  Error screenshots are generated on test failures and storied in the default build dir.
