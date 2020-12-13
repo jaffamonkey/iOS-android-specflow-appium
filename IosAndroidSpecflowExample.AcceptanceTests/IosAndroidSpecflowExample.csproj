@@ -24,6 +24,7 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="FluentAssertions" Version="5.9.0" />
+        <PackageReference Include="GreyhamWooHoo.FlutterDriver" Version="0.0.8-beta" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
         <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.1.67" />

@@ -61,7 +61,7 @@ namespace IosAndroidSpecflowExample.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /Users/jaffa/code/iOS-android-specflow-example/apps/com.xamarin.acquaintnative.apk.
+        ///   Looks up a localized string similar to /Users/jaffa/code/iOS-android-specflow-appium/IosAndroidSpecflowExample.AcceptanceTests/apps/flutter-android-app.apk.
         /// </summary>
         public static string ApkPath {
             get {

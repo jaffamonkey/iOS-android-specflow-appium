@@ -1,4 +1,6 @@
-﻿# To run tests locally:
+﻿
+
+# To run tests locally:
 
 First start Appium and start an emulator (assumed device identifier is `Pixel_XL_API_28`).
 

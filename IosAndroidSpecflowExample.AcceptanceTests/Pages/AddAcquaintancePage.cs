@@ -14,6 +14,10 @@ namespace IosAndroidSpecflowExample.Pages
         [FindsByIOSUIAutomation(ID = "_FirstNameField")]
         private IMobileElement<AppiumWebElement> _firstNameFieldElement;
 
+        [FindsByAndroidUIAutomator(XPath = "//android.widget.TextView[@content-desc='Accessibility']")]
+        [FindsByIOSUIAutomation(ID = "Accessibility")]
+        private IMobileElement<AppiumWebElement> _accessibilityElement;
+
         [FindsByAndroidUIAutomator(ID = "lastNameField")]
         [FindsByIOSUIAutomation(ID = "_LastNameField")]
         private IMobileElement<AppiumWebElement> _lastNameFieldElement;
@@ -36,6 +40,12 @@ namespace IosAndroidSpecflowExample.Pages
             _lastNameFieldElement.Clear();
             _lastNameFieldElement.Click();
             _lastNameFieldElement.SendKeys(lastName);
+        }
+
+        public void TapOnAccessibilityLink()
+        {
+            Helper.WaitFor(() => _accessibilityElement.Displayed);
+            _accessibilityElement.Click();
         }
 
         public void TapOnSaveButton()
