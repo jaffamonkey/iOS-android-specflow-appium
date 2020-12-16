@@ -23,17 +23,17 @@
         <AdditionalFiles Include="stylecop.json" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="FluentAssertions" Version="5.9.0" />
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
         <PackageReference Include="GreyhamWooHoo.FlutterDriver" Version="0.0.8-beta" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
-        <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.1.67" />
-        <PackageReference Include="SpecFlow.NUnit" Version="3.1.67" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
+        <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.5.14" />
+        <PackageReference Include="SpecFlow.NUnit" Version="3.5.14" />
         <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Appium.WebDriver" Version="4.1.1" />
+        <PackageReference Include="Appium.WebDriver" Version="4.2.1" />
         <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="3.12.0" />
         <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
     </ItemGroup>

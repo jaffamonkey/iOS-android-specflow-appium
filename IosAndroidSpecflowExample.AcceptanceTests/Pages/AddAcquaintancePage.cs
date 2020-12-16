@@ -4,6 +4,7 @@ using OpenQA.Selenium.Appium.Interfaces;
 using OpenQA.Selenium.Appium.PageObjects;
 using OpenQA.Selenium.Appium.PageObjects.Attributes;
 using SeleniumExtras.PageObjects;
+using System;
 
 namespace IosAndroidSpecflowExample.Pages
 {
@@ -14,8 +15,8 @@ namespace IosAndroidSpecflowExample.Pages
         [FindsByIOSUIAutomation(ID = "_FirstNameField")]
         private IMobileElement<AppiumWebElement> _firstNameFieldElement;
 
-        [FindsByAndroidUIAutomator(XPath = "//android.widget.TextView[@content-desc='Accessibility']")]
-        [FindsByIOSUIAutomation(ID = "Accessibility")]
+        [FindsByAndroidUIAutomator(XPath = "//android.widget.Button[@content-desc='Increment']")]
+        [FindsByIOSUIAutomation(ID = "Increment")]
         private IMobileElement<AppiumWebElement> _accessibilityElement;
 
         [FindsByAndroidUIAutomator(ID = "lastNameField")]
