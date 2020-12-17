@@ -17,9 +17,6 @@
         <None Remove="stylecop.json" />
     </ItemGroup>
     <ItemGroup>
-        <SpecFlowFeatureFiles Remove="Features\AddAcquaintance\SpecFlowFeature1.feature" />
-    </ItemGroup>
-    <ItemGroup>
         <AdditionalFiles Include="stylecop.json" />
     </ItemGroup>
     <ItemGroup>
